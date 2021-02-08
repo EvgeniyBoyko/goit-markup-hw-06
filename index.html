@@ -65,7 +65,7 @@
       <!--Особенности-->
       <section class="section section-features">
         <div class="container">
-          <h2 class="section-title" class="visually-hidden">Особености</h2>
+          <h2 class="section-title visually-hidden">Особености</h2>
           <ul class="features-list">
             <li class="features-item bgf-img1">
               <h3 class="section-title features">Внимание к деталям</h3>
@@ -399,6 +399,54 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-window">
+        <div class="backdrop-contant">
+          <form class="backdrop-form">
+            <p class="backdrop-form-name">Оставьте свои данные, мы вам перезвоним</p>
+            <label for="Имя" class="backdrop-list">
+              <span class="backdrop-form-text">Имя</span>
+              <input type="text" name="username" class="backdrop-imput" id="username" />
+              <svg class="backdrop-icon-container" width="12" heigth="12">
+                <use class="backdrop-icon" href="./images/sprite.svg#mail2"></use>
+              </svg>
+            </label>
+
+            <label for="Телефон" class="backdrop-list">
+              <span class="backdrop-form-text">Телефон</span>
+              <input type="tel" name="phone-number" class="backdrop-imput" id="phone-number" />
+              <svg class="backdrop-icon-container" width="13" heigth="13">
+                <use class="backdrop-icon" href="./images/sprite.svg#phone"></use>
+              </svg>
+            </label>
+
+            <label for="Почта" class="backdrop-list">
+              <span class="backdrop-form-text">Почта</span>
+              <input type="email" name="email" class="backdrop-imput" id="email" />
+              <svg class="backdrop-icon-container" width="15" heigth="12">
+                <use class="backdrop-icon" href="./images/sprite.svg#peple"></use>
+              </svg>
+            </label>
+
+            <label for="comment" class="backdrop-list">
+              <span class="backdrop-form-text">Комментарий</span>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Введите текст"
+                class="backdrop-textarea"
+                id="comment"
+              ></textarea>
+            </label>
+
+            <label class="backdrop-checkbox">
+              <input type="checkbox" name="mailing" />
+              <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю</p>
+              <a href="#" class="checkbox-link">Условия договора</a>
+            </label>
+
+            <button type="submit" class="hero-btn">Отправить</button>
+          </form>
+        </div>
+
         <button type="button" data-modal-close class="backdrop-btn">
           <svg class="icon-exit">
             <use href="./images/sprite.svg#close-black"></use>

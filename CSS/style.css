@@ -49,6 +49,10 @@ ul {
   padding: 0px;
 }
 
+textarea {
+  resize: none;
+}
+
 /* =================Header================= */
 
 .page-header {
@@ -209,7 +213,7 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-page .hero-btn {
+.hero-btn {
   color: var(--text-wite-color);
   font-weight: 700;
   font-size: 16px;
@@ -224,12 +228,6 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* .hero-page .hero-btn:focus,
-.hero-page .hero-btn:hover {
-  color: var(--text-black-color);
-  background-color: var(--background-second-color);
-} */
 
 .hero-page {
   background-color: #c4c4c4;
@@ -348,7 +346,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-second-color);
-  /* width: 270px; */
   height: 120px;
 }
 
@@ -446,8 +443,6 @@ ul {
   background-color: var(--text-wite-color);
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .section-comand .section-title.name {
@@ -473,10 +468,6 @@ ul {
   display: inline-flex;
   margin-top: 16px;
 }
-
-/* .network-link {
-  transition: background-color 250ms var(--cubic);
-} */
 
 .network-link:focus,
 .network-link:hover {
@@ -653,8 +644,6 @@ ul {
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .soshial-link {
@@ -752,6 +741,81 @@ ul {
 .backdrop-btn:focus .icon-exit,
 .backdrop-btn:hover .icon-exit {
   fill: var(--text-accent);
+}
+
+.backdrop-form-name {
+  margin-top: 40px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-black-color);
+}
+
+.backdrop-form-text {
+  display: block;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-top: 12px;
+}
+
+.backdrop-list {
+  display: block;
+  margin-left: 40px;
+  position: relative;
+}
+
+.backdrop-imput {
+  /* position: relative; */
+  width: 448px;
+  height: 40px;
+  padding-left: 30px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.backdrop-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox-text {
+  margin-left: 9px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.171;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.checkbox-link {
+  margin-left: 4px;
+}
+
+.backdrop-icon-container {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 13px;
+  height: 13px;
+}
+
+.backdrop-textarea {
+  width: 448px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /* ========== END Modal =============== */

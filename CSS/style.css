@@ -672,6 +672,42 @@ textarea {
   border-radius: 50%;
 }
 
+.subscription-container {
+  width: 570px;
+  padding: 60px 0;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--footer-bg-color);
+}
+
+.footer-btn {
+  margin-left: 12px;
+  margin-top: 20px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.subscription-send {
+  margin-left: 10px;
+  fill: var(--text-wite-color);
+}
+
 /* =================== END FOOTER ========================== */
 
 /* ========== Modal =============== */
@@ -767,15 +803,14 @@ textarea {
 
 .backdrop-list {
   display: block;
-  margin-left: 40px;
+  margin-left: 41px;
   position: relative;
 }
 
 .backdrop-imput {
-  /* position: relative; */
   width: 448px;
   height: 40px;
-  padding-left: 30px;
+  padding-left: 44px;
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -804,10 +839,10 @@ textarea {
 
 .backdrop-icon-container {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 12px;
-  width: 13px;
-  height: 13px;
+  width: 18px;
+  height: 18px;
 }
 
 .backdrop-textarea {

@@ -847,6 +847,7 @@ textarea {
 
 .backdrop-textarea {
   width: 448px;
+  height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
   border-radius: 4px;

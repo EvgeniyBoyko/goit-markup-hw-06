@@ -694,6 +694,14 @@ textarea {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--footer-bg-color);
+
+  transition: border 250ms var(--cubic);
+}
+
+.subscription-input:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .footer-btn {
@@ -733,6 +741,7 @@ textarea {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -769,19 +778,12 @@ textarea {
   pointer-events: none;
 }
 
-.backdrop-btn:focus,
-.backdrop-btn:hover {
-  border: 1px solid var(--text-accent);
-}
-
-.backdrop-btn:focus .icon-exit,
-.backdrop-btn:hover .icon-exit {
+.backdrop-btn:hover .icon-exit,
+.backdrop-btn:focus .icon-exit {
   fill: var(--text-accent);
 }
 
 .backdrop-form-name {
-  margin-top: 40px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -803,29 +805,56 @@ textarea {
 
 .backdrop-list {
   display: block;
-  margin-left: 41px;
-  position: relative;
 }
 
 .backdrop-imput {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 44px;
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border 250ms var(--cubic);
 }
 
-.backdrop-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.backdrop-imput:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.svg-form-container {
+  position: relative;
+}
+
+.checkbox-text::before {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  content: '';
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid var(--text-black-color);
+  border-radius: 2px;
+  background-size: contain;
+}
+
+.backdrop-checkbox-bg:checked + .checkbox-text::before {
+  background-color: var(--text-accent);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  border-color: var(--text-accent);
+  border-radius: 2px;
 }
 
 .checkbox-text {
+  display: inline-block;
   margin-left: 9px;
-
+  margin-top: 20px;
+  vertical-align: top;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.171;
@@ -834,15 +863,20 @@ textarea {
 }
 
 .checkbox-link {
-  margin-left: 4px;
+  color: var(--text-accent);
 }
 
 .backdrop-icon-container {
   position: absolute;
-  top: 55%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms var(--cubic);
+}
+
+.backdrop-imput:focus + .backdrop-icon-container {
+  fill: var(--text-accent);
 }
 
 .backdrop-textarea {
@@ -852,6 +886,19 @@ textarea {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border-radius 250ms var(--cubic);
+}
+
+.backdrop-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.backdrop-textarea:hover,
+.backdrop-textarea:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 /* ========== END Modal =============== */

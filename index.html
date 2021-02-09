@@ -417,26 +417,32 @@
             <p class="backdrop-form-name">Оставьте свои данные, мы вам перезвоним</p>
             <label for="Имя" class="backdrop-list">
               <span class="backdrop-form-text">Имя</span>
-              <input type="text" name="username" class="backdrop-imput" id="Имя" />
-              <svg class="backdrop-icon-container" width="18" heigth="18">
-                <use class="backdrop-icon" href="./images/sprite.svg#person"></use>
-              </svg>
+              <span class="svg-form-container">
+                <input type="text" name="username" class="backdrop-imput" id="Имя" />
+                <svg class="backdrop-icon-container" width="12" heigth="12">
+                  <use class="backdrop-icon" href="./images/sprite.svg#person"></use>
+                </svg>
+              </span>
             </label>
 
             <label for="Телефон" class="backdrop-list">
               <span class="backdrop-form-text">Телефон</span>
-              <input type="tel" name="phone-number" class="backdrop-imput" id="Телефон" />
-              <svg class="backdrop-icon-container" width="18" heigth="18">
-                <use class="backdrop-icon" href="./images/sprite.svg#phone"></use>
-              </svg>
+              <span class="svg-form-container">
+                <input type="tel" name="phone-number" class="backdrop-imput" id="Телефон" />
+                <svg class="backdrop-icon-container" width="13" heigth="13">
+                  <use class="backdrop-icon" href="./images/sprite.svg#phone"></use>
+                </svg>
+              </span>
             </label>
 
             <label for="Почта" class="backdrop-list">
               <span class="backdrop-form-text">Почта</span>
-              <input type="email" name="email" class="backdrop-imput" id="Почта" />
-              <svg class="backdrop-icon-container" width="15" heigth="12">
-                <use class="backdrop-icon" href="./images/sprite.svg#mail2"></use>
-              </svg>
+              <span class="svg-form-container">
+                <input type="email" name="email" class="backdrop-imput" id="Почта" />
+                <svg class="backdrop-icon-container" width="15" heigth="12">
+                  <use class="backdrop-icon" href="./images/sprite.svg#mail2"></use>
+                </svg>
+              </span>
             </label>
 
             <label for="comment" class="backdrop-list">
@@ -444,21 +450,19 @@
               <textarea name="comment" placeholder="Введите текст" class="backdrop-textarea" id="comment"></textarea>
             </label>
 
-            <label class="backdrop-checkbox">
-              <input type="checkbox" name="mailing" checked />
-              <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю</p>
-              <a href="#" class="checkbox-link">Условия договора</a>
+            <input name="mailing" id="mailing" type="checkbox" class="backdrop-checkbox-bg visually-hidden" />
+            <label for="mailing" class="checkbox-text"
+              >Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a>
             </label>
-
             <button type="submit" class="hero-btn">Отправить</button>
           </form>
-        </div>
 
-        <button type="button" data-modal-close class="backdrop-btn">
-          <svg class="icon-exit">
-            <use href="./images/sprite.svg#close-black"></use>
-          </svg>
-        </button>
+          <button type="button" data-modal-close class="backdrop-btn">
+            <svg class="icon-exit">
+              <use href="./images/sprite.svg#close-black"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
